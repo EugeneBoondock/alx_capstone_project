@@ -36,11 +36,25 @@ main {
 }
 
 /* About Me section */
-.dark-orange-background {
+.background {
     background-color: #3d3d3d; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
     color: #fff; /* Light text color */
+}
+
+#pfp {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../images/image1.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .about-content {
@@ -87,6 +101,50 @@ main {
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
+    padding: 10px;
+}
+
+#skill {
+    border: solid #ff8c00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skill #first {
+    border: solid #ff8c00;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#skill #sec {
+    border: solid #ff8c00;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#skill #third {
+    border: solid #ff8c00;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#skill #four {
+    border: solid #ff8c00;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#skill #fift {
+    border: solid #ff8c00;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Projects section */

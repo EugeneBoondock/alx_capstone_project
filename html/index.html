@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eugene Boondock</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
     <header>
@@ -22,8 +23,11 @@
     </nav>
 
     <main>
-        <section id="about" class="dark-orange-background">
-            <h2>About Me</h2>
+        <section id="about" class="background">
+            <div class="about-info">
+                <h2>Hi, Eugene here.</h2>
+                <p>A junior web developer who builds interesting stuff.</p>
+            </div>
             <div class="about-content">
                 <p class="about-details">🌍 <strong>Explorer of the Digital Universe | Earth2 Enthusiast</strong></p>
                 <p class="about-details">🎓 <strong>AI Aficionado | Software Engineer in Training</strong></p>
@@ -32,33 +36,37 @@
                 <p class="about-details">🌈 <strong>Culturally Rich | Ndebele, Pedi, Shona Blend</strong></p>
                 <p class="about-details">🚀 <strong>Number One on the Earth2 Leaderboard in South Africa</strong></p>
                 <p class="about-intro">
-                    Greetings! I'm Eugene Ncube, an enthusiastic explorer of the digital universe and a dedicated Earth2 Moderator.
                 </p>
-                <p class="about-info">
-                    My academic journey led me to graduate in 2020 with a Bachelor of Arts in Politics and International Relations from the University of Johannesburg. <br>
-                    Since then, I've dived headfirst into the captivating world of AI, Deep Learning, and Reinforcement Learning. <br>
-                    I'm currently honing my coding skills in HTML, CSS, Python, MySQL, and JavaScript <br> 
-                    and have successfully completed a Capstone Project that showcases my commitment to software engineering.
-                </p>
-                <p class="about-more">
-                    As an Earth2 Moderator, I actively participate in shaping the future of this immersive metaverse,
-                    and I'm proud to be the number one player on the leaderboard in South Africa, with a substantial tile count to my name.
-                </p>
-                <p class="about-culture">
-                    With a rich cultural background that combines Ndebele, Pedi (Mojapelo), and Shona heritage, I bring a diverse perspective to all my endeavors.
-                </p>
-                <p class="about-endeavor">
-                    Join me on this incredible journey as we explore the boundless possibilities of technology and the metaverse.
-                    Together, we'll embark on epic adventures, forge lasting bonds, and create a future that's as exciting as it is transformative.
-                </p>
-                <p class="about-collaborate">
-                    Let's connect, collaborate, and make a mark in the digital cosmos!
-                </p>
+            </div>
+            <div>
+                <img src="../images/pfp.png" id="pfp" alt="avatar">
             </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <!-- Your skills list here -->
+            <div id="skill">
+                <ul id="first">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+                <ul id="sec">
+                    <li>SQL</li>
+                    <li>HTML</li>
+                </ul>
+                <ul id="third">
+                    <li>HTMX</li>
+                    <li>CSS</li>
+                </ul>
+                <ul id="four">
+                    <li>Version Control - Git</li>
+                    <li>BUN library</li>
+                </ul>
+                <ul id="fift">
+                    <li>Google Colab</li>
+                    <li>HuggingFace</li>
+                    <li>Cursor</li>
+                </ul>
+            </div>
         </section>
 
         <section id="projects">
@@ -93,20 +101,25 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form action="process.php" method="post">
+            <form id="submitForm" action="process.php" method="post">
                 <label for="name">Name:</label>
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <p id="errorName" style="color: red;"></p>
             
                 <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Name" required>
+                <p id="errorEmail" style="color: red;"></p>
             
                 <label for="message">Message:</label>
-                <textarea name="message" rows="4" placeholder="Say Something" required></textarea>
+                <textarea name="message" rows="4" id="message" placeholder="Say Something" required></textarea>
+                <p id="errorMessage" style="color: red;"></p>
             
                 <button type="submit">Submit</button>
+                <p id="errorSubmit" style="color: red;"></p>
             </form>
             
         </section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
