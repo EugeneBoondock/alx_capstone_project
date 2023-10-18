@@ -59,6 +59,11 @@ main {
     height: 100vh;
 }
 
+#about #sub {
+    color: #ff8c00;
+    margin-bottom: -160px;
+}
+
 #dance::-webkit-media-controls {
     display:none !important;
 }
@@ -107,6 +112,10 @@ main {
 }
 
 .about-info {
+    animation: flickerAnimation 1s infinite;
+}
+
+#sub {
     animation: flickerAnimation 1s infinite;
 }
 
