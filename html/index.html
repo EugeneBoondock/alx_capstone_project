@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eugene Boondock</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,25 +20,23 @@
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Personal Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="about" class="background">
+        <section id="about">
             <div class="about-info">
                 <h2>Hi, Eugene here.</h2>
-                <p>A junior web developer who builds interesting stuff.</p>
+                <p>A junior web developer, <br> who builds interesting stuff.</p>
             </div>
             <div class="about-content">
-                <p class="about-details">🌍 <strong>Explorer of the Digital Universe | Earth2 Enthusiast</strong></p>
-                <p class="about-details">🎓 <strong>AI Aficionado | Software Engineer in Training</strong></p>
-                <p class="about-details">📚 <strong>Eager Learner | Deep Learning Devotee</strong></p>
-                <p class="about-details">🤝 <strong>Community Builder | Earth2 Moderator</strong></p>
-                <p class="about-details">🚀 <strong>Number One on the Earth2 Leaderboard in South Africa</strong></p>
-                <p class="about-intro">
-                </p>
+                <a href="https://earth2.io"><p class="about-details">🌍 <strong>Explorer of the Digital Universe | Earth2 Enthusiast</strong></p></a>
+                <a href="https://www.fast.ai/"><p class="about-details">🎓 <strong>AI Aficionado | AI Researcher in Training</strong></p></a> 
+                <a href="https://huggingface.co/EugeneBoondock"><p class="about-details">📚 <strong>Eager Learner | Deep Learning Devotee</strong></p></a>
+                <a href="https://discord.gg/earth2"><p class="about-details">🤝 <strong>Community Builder | Earth2 Moderator</strong></p></a>
+                <a href="https://app.earth2.io/#leaderboard"><p class="about-details">🚀 <strong>Number One on the Earth2 Leaderboard in South Africa</strong></p></a>
             </div>
             <div>
                 <img src="../images/pfp.png" id="pfp" alt="avatar">
@@ -66,36 +67,106 @@
                     <li>Cursor</li>
                 </ul>
             </div>
+            <div id="descriptions">
+                <ul>
+                    <li>Python</li>
+                </ul>
+                <ul>
+                    <li>JavaScript</li>
+                </ul>
+                <ul>
+                    <li>SQL</li>
+                </ul>
+                <ul>
+                    <li>HTML</li>
+                </ul>
+                <ul>
+                    <li>HTMX</li>
+                </ul>
+                <ul>
+                    <li>CSS</li>
+                </ul>
+                <ul>
+                    <li>Version Control - Git</li>
+                </ul>
+                <ul>
+                    <li>Bun library</li>
+                </ul>
+                <ul>
+                    <li>Google Collab</li>
+                </ul>
+                <ul>
+                    <li>HuggingFace</li>
+                </ul>
+                <ul>
+                    <li>Cursor</li>
+                </ul>
+            </div>
         </section>
 
+
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>INK (Intelligent Narrative Keeper)</h3>
-                <p>An assistant called INK (Intelligent Narrative Keeper) 
-                    that can generate various types of documents in different formats based on user input. <br>
-                    It utilizes OpenAI's text-davinci-003 model for document generation and 
-                    integrates with external libraries and APIs for additional functionalities.</p>
-                <a href="project-link">Live Demo</a>
-                <a href="https://github.com/EugeneBoondock/INK">Source Code</a>
+            <h2 class="heading">Personal Projects</h2>
+            <div id="projects">
+                <div id="project1" class="project-card">
+                    <div>
+                        <h3>HeadPhones Website</h3>
+                        <p>Visually appealing and fully functional web page for a headphones website. <br>
+                            Design copied from figma and made with CSS and HTML. <br> 
+                        </p>
+                        <a href="https://github.com/EugeneBoondock/headphones">Source Code</a>
+                    </div>
+                    <div class="video-container">
+                        <video width="480" height="480" controls autoplay>
+                            <source src="../video/headphones.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <h3>Advanced Css Website</h3>
+                        <p>Visually appealing and fully functional web page for a Get Schooled website. <br>
+                            Design copied from figma and made with CSS and HTML. <br> 
+                        </p>
+                        <a href="https://github.com/EugeneBoondock/alx_html_css/tree/main/css_advanced">Source Code</a>
+                    </div>
+                    <div class="video-container">
+                        <video width="480" height="480" controls autoplay>
+                            <source src="../video/advanced.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div id="project2" class="project-card">
+                    <h3>INK (Intelligent Narrative Keeper)</h3>
+                    <p>An assistant called INK (Intelligent Narrative Keeper) 
+                        that can generate various types of documents in different formats based on user input. <br>
+                        It utilizes OpenAI's text-davinci-003 model for document generation and 
+                        integrates with external libraries and APIs for additional functionalities.</p>
+                    <a href="https://github.com/EugeneBoondock/INK">Source Code</a>
+                    <div class="video-container">
+                        <video width="480" height="480" controls autoplay>
+                            <source src="../video/INKs.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>AthenaSynth</h3>
+                    <p>AthenaSynth is an AI alignment experiment that generates responses to user questions 
+                        based on the ethical perspective of Aristotle, <br>
+                        the moral philosophy of Immanuel Kant, and the focus on reason from René Descartes. <br>
+                        It uses OpenAI's GPT-3.5-turbo model to provide synthesized answers to questions, <br>
+                        taking into account the context and summaries of the works of these philosophers.</p>
+                    <a href="https://github.com/EugeneBoondock/AthenaSynth">Source Code</a>
+                </div>
+                <div class="project-card">
+                    <h3>Boondocks Guild Website</h3>
+                    <p>Website representing the Boondocks Guild in Earth2</p>
+                    <a href="https://github.com/EugeneBoondock/Boondocks_Guild_Site">Source Code</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>AthenaSynth</h3>
-                <p>AthenaSynth is an AI alignment experiment that generates responses to user questions 
-                    based on the ethical perspective of Aristotle, <br>
-                    the moral philosophy of Immanuel Kant, and the focus on reason from René Descartes. <br>
-                    It uses OpenAI's GPT-3.5-turbo model to provide synthesized answers to questions, <br>
-                    taking into account the context and summaries of the works of these philosophers.</p>
-                <a href="project-link">Live Demo</a>
-                <a href="https://github.com/EugeneBoondock/AthenaSynth">Source Code</a>
-            </div>
-            <div class="project-card">
-                <h3>Boondocks Guild Website</h3>
-                <p>Website representing the Boondocks Guild in Earth2</p>
-                <a href="project-link">Live Demo</a>
-                <a href="https://github.com/EugeneBoondock/Boondocks_Guild_Site">Source Code</a>
-            </div>
-            
         </section>
 
         <section id="contact">

@@ -1,3 +1,12 @@
+/* header*/
+header h1:hover {
+    color: #ff8c00;
+}
+
+header p:hover {
+    color: #ff8c00;
+}
+
 /* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
@@ -8,7 +17,7 @@ body, h1, h2, h3, p {
 body {
     background-color: #1a1a1a; /* Dark background */
     color: #fff; /* Light text color */
-    font-family: Arial, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 header {
@@ -36,10 +45,10 @@ main {
 }
 
 /* About Me section */
-.background {
+#about {
     background-color: #3d3d3d; /* Dark gray background for section */
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 0;
     color: #fff; /* Light text color */
     display: flex;
     align-items: center;
@@ -48,7 +57,6 @@ main {
     background-size: cover; /* Adjust the background size to cover the entire section */
     background-position: center; /* Center the background image */
     height: 100vh;
-/*    padding: 500px;*/
 }
 
 #pfp {
@@ -56,56 +64,41 @@ main {
     height: auto; /* Maintain the aspect ratio */
 }
 
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url('../images/image1.jpeg');
-    background-size: cover; /* Adjust the background size to cover the entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat;
-}
-
 .about-content {
     text-align: center;
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     border-radius: 10px;
     padding: 10px;
+}
+
+.about-content a {
+    text-decoration: none;
 }
 
 .about-details {
     font-size: 1.2rem;
     margin: 5px 0;
+    color: #fff;
 }
 
-.about-intro {
-    font-size: 1.2rem;
-    margin: 20px 0;
+.about-details:hover {
+    color: #ff8c00;
 }
 
 .about-info {
     font-size: 1rem;
-    margin: 10px 0;
+    margin-bottom: 400px;
+    font-size: 20px;
 }
 
-.about-more {
-    font-size: 1rem;
-    margin: 10px 0;
+@keyframes flickerAnimation {
+    0% { color: white; }
+    50% { color: #ff8c00; }
+    100% { color: #ff4500; }
 }
 
-.about-culture {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.about-endeavor {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.about-collaborate {
-    font-size: 1rem;
-    margin: 10px 0;
+.about-info {
+    animation: flickerAnimation 1s infinite;
 }
 
 /* Skills section */
@@ -123,59 +116,88 @@ main {
 }
 
 #skill {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
 }
 
 #skill #first {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
 }
 
 #skill #sec {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
 }
 
 #skill #third {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
 }
 
 #skill #four {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
 }
 
 #skill #fift {
-    border: solid #ff8c00;
+    border: solid #ff8c00 1px;
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+#descriptions {
+    display: flex;
+    flex-direction: row;
+    border: solid #ff8c00 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 /* Projects section */
 #projects {
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
+    background-image: url('../images/projects_bg.jpeg');
+    background-size: cover; /* Adjust the background size to cover the entire section */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#project1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#project2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card {
-    background-color: #333; /* Dark gray background for project cards */
-    padding: 15px;
-    margin: 10px;
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .project-card a {
