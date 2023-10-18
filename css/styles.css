@@ -41,6 +41,14 @@ main {
     padding: 20px;
     margin-top: 20px;
     color: #fff; /* Light text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../images/image1.jpeg');
+    background-size: cover; /* Adjust the background size to cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 100vh;
+/*    padding: 500px;*/
 }
 
 #pfp {
@@ -53,12 +61,16 @@ main {
     align-items: center;
     justify-content: space-around;
     background-image: url('../images/image1.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Adjust the background size to cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
 }
 
 .about-content {
     text-align: center;
+    border: solid #ff8c00;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .about-details {
@@ -98,10 +110,16 @@ main {
 
 /* Skills section */
 #skills {
+    border-radius: 10px;
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 50px;
+    background-image: url(../images/skills_bg.png);
+    height: 100vh;
+    background-size: cover; /* Adjust the background size to cover the entire section */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat;
 }
 
 #skill {

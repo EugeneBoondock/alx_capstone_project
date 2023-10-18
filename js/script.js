@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 function validateName() {
     const name = document.getElementById('name').value;
     const error = document.getElementById('errorName');
