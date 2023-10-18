@@ -1,5 +1,32 @@
 #!/usr/bin/node
 
+const texts = ["This is the first sentence.", "This is the second sentence.", "This is the third sentence."];
+let currentTextIndex = 0;
+let currentText = texts[currentTextIndex];
+let index = 0;
+const speed = 50; // Adjust the speed of typing
+const pauseDuration = 3000; // 3 seconds
+
+function typeWriter() {
+  if (index < currentText.length) {
+    document.getElementById("text").innerHTML += currentText.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(resetText, pauseDuration);
+  }
+}
+
+function resetText() {
+  index = 0;
+  currentTextIndex = (currentTextIndex + 1) % texts.length;
+  currentText = texts[currentTextIndex];
+  document.getElementById("text").innerHTML = "";
+  setTimeout(typeWriter, speed);
+}
+
+typeWriter();
+
 function validateName() {
     const name = document.getElementById('name').value;
     const error = document.getElementById('errorName');

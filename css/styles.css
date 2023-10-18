@@ -186,6 +186,11 @@ main {
     padding: 10px;
 }
 
+#text {
+    font-size: 100px;
+    padding: 10px;
+}
+
 /* Projects section */
 #projects {
     background-color: #222; /* Dark gray background for section */
