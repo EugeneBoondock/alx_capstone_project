@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($name) && !empty($email) && !empty($message)) {
         // Send an email notification to your specified email address
-        $to = "your-email@example.com";
+        $to = "philosncube@gmail.com";
         $subject = "Portfolio Contact Form Submission from $name";
         $message = "Name: $name\nEmail: $email\nMessage: $message";
 

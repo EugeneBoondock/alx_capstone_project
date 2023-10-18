@@ -107,12 +107,14 @@
                     <li>Cursor</li>
                 </ul>
             </div>
-            <div id="text"></div>
-            <div>
-                <video width="240" height="480" id="dance1" autoplay loop muted playsinline controls="false">
-                    <source src="../video/dance.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+            <div id="pin">
+                <div id="text"></div>
+                <div>
+                    <video width="240" height="480" id="dance1" autoplay loop muted playsinline controls="false">
+                        <source src="../video/dance.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </section>
 
@@ -183,7 +185,7 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form id="submitForm" action="process.php" method="post">
+            <form id="submitForm" action="../process.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Your Name" required>
                 <p id="errorName" style="color: red;"></p>

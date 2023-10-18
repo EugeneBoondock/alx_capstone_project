@@ -1,6 +1,9 @@
 #!/usr/bin/node
 
-const texts = ["This is the first sentence.", "This is the second sentence.", "This is the third sentence."];
+const texts = [
+    "I speak Python fluently, but my snake charming skills need work.",
+    "JavaScript is my cup of tea, it keeps me grounded even when my DOM's in disarray.", 
+    "That's enough text for today, you get the point."];
 let currentTextIndex = 0;
 let currentText = texts[currentTextIndex];
 let index = 0;
