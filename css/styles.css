@@ -290,100 +290,50 @@ button[type="submit"]:hover {
     background-color: #ff4500; /* Slightly darker orange on hover */
 }
 
-/* CSS for mobile devices */
-@media only screen and (max-width: 600px) {
-    /* Header styles */
+/* Add this at the end of your CSS file */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
     header {
         padding: 10px;
     }
-
-    /* Navigation styles */
-    nav ul {
-        display: none;
-        position: absolute;
-        background: #333;
-        width: 100%;
-        text-align: center;
-        top: 60px;
-        left: 0;
-    }
-
+    
     nav ul li {
         display: block;
         margin: 10px 0;
     }
 
-    nav a {
-        color: #ff8c00;
-        text-decoration: none;
-    }
-
-    /* Main styles */
     main {
         padding: 10px;
     }
 
-    /* About Me section styles */
     #about {
-        padding: 10px;
-        background-size: cover;
-        display: flex;
+        height: auto;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
-    #about .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .about-info {
+        margin-top: 300px;
     }
 
-    #about .about-details {
-        margin: 5px 0;
-    }
-
-    #about #sub {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    /* Skills section styles */
     #skills {
-        padding: 10px;
-    }
-
-    #skill ul {
-        width: 100%;
+        padding: 20px;
+        height: auto;
     }
 
     #descriptions {
-        display: none;
+        flex-direction: column;
     }
 
-    #pin {
-        display: none;
-    }
-
-    /* Projects section styles */
     #projects {
         padding: 10px;
         background-size: cover;
     }
 
     .project-card {
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-right: 30px
     }
 
-    /* Contact section styles */
-    #contact {
-        padding: 10px;
-        background-size: cover;
-    }
-
-    /* Form styles */
     label {
         margin-top: 5px;
     }
@@ -391,12 +341,65 @@ button[type="submit"]:hover {
     input[type="text"],
     input[type="email"],
     textarea {
-        padding: 8px;
+        padding: 5px;
+        margin: 3px 0;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul li {
+        display: block;
         margin: 5px 0;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    .about-content {
+        padding: 5px;
+    }
+
+    #about #sub {
+        margin-bottom: -80px;
+    }
+
+    .about-details {
+        font-size: 1rem;
+    }
+
+    .about-info {
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+
+    #text {
+        font-size: 60px;
+    }
+
+    #pin {
+        margin-top: 100px;
+    }
+
+    #skills {
+        padding: 10px;
+    }
+
+    #skill {
+        flex-direction: column;
+    }
+
+    #descriptions {
+        padding: 5px;
     }
 
     button[type="submit"] {
         margin-top: 10px;
-        padding: 8px 16px;
+        padding: 5px 10px;
     }
 }
