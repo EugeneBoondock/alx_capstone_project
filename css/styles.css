@@ -53,7 +53,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: url('../images/image1.jpeg');
+    background-image: url(../images/image1.jpeg);
     background-size: cover; /* Adjust the background size to cover the entire section */
     background-position: center; /* Center the background image */
     height: 100vh;
@@ -207,7 +207,7 @@ main {
 #projects {
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
-    background-image: url('../images/projects_bg.jpeg');
+    background-image: url(../images/projects_bg.jpeg);
     background-size: cover; /* Adjust the background size to cover the entire section */
     background-position: top; /* Center the background image */
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ main {
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
-    background-image: url('../images/contact_bg.jpeg');
+    background-image: url(../images/contact_bg.jpeg);
     background-size: cover; /* Adjust the background size to cover the entire section */
     background-position: top; /* Center the background image */
     background-repeat: no-repeat;
