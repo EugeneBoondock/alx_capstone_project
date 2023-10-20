@@ -29,7 +29,9 @@ The project is primarily built using the following technologies and tools:
 ![MockUp](./images/drawio.png)
 
 ## Roadmap and Future Enhancements
-
+- Will deploy to Github Pages
+- Add more projects and refine it as I learn more and more
+- Add links to live demos of my projects
 
 ## Contact Information
 
