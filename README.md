@@ -24,7 +24,7 @@ The project is primarily built using the following technologies and tools:
 
 ## Screenshots
 
-![Workflow](../work-flow_image.png)
+![Workflow](./work-flow_image.png)
 
 ![Screenshot 2](/path/to/your/screenshot2.png)
 
