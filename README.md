@@ -10,6 +10,7 @@ The project aims to serve as a comprehensive portfolio and representation of my 
 - **Project Showcase:** The website prominently displays a collection of my notable projects, each with a brief description and a link to the corresponding source code.
 - **Contact Form:** The contact section includes a form through which users can reach out to me directly for inquiries, collaborations, or any other discussions.
 - **Dynamic Visuals:** The website incorporates dynamic visuals, including videos and images, to create an engaging and immersive user experience.
+-**Detailed Sections:** 'About Me,' 'Skills,' 'Personal Projects,' and 'Contact' allow users to explore my background, technical skills, and past projects.
 
 ## Technologies Used
 
@@ -17,22 +18,18 @@ The project is primarily built using the following technologies and tools:
 
 - **HTML & CSS**: Used for structuring and styling the website's layout and design.
 - **JavaScript**: Implemented to add dynamic and interactive elements to the web pages.
-- **Python**: Utilized for backend development and integration of AI-related functionalities.
 - **Git & GitHub**: Employed for version control and collaborative development.
-- **OpenAI's GPT-3.5-turbo Model**: Leveraged for AI-related experiments and projects on the website.
-- **Figma**: Used for design inspiration and prototyping of various web elements.
+-**PHP**: Utilized for server-side to allow for me to receive emails
+- **Drawio**: Used for design inspiration and prototyping of various web elements.
 
-## Screenshots
+## WorkFlow and Mockup
 
-![Workflow](./work-flow_image.png)
+![Workflow](./images/work-flow_image.png)
 
-![Screenshot 2](/path/to/your/screenshot2.png)
+![MockUp](./images/drawio.png)
 
 ## Roadmap and Future Enhancements
 
-- **Enhanced Project Display:** Plan to add more detailed descriptions and interactive elements to the project display section.
-- **AI Integration Expansion:** Considering the integration of more advanced AI functionalities and experiments to showcase the capabilities of AI in various domains.
-- **Blog Section Addition:** Intend to incorporate a dedicated blog section to share insights, technical articles, and updates on the latest trends in AI and software engineering.
 
 ## Contact Information
 
@@ -41,5 +38,6 @@ For any inquiries, collaborations, or discussions, please feel free to reach out
 - **Eugene Boondock**
 - [GitHub](https://github.com/EugeneBoondock/alx_capstone_project)
 - [LinkedIn](https://www.linkedin.com/in/eboondock/)
-- [Twitter](https://twitter.com/EugeneBoondock)
+- [Twitter](https://twitter.com/MansaKirito)
 - [Personal Portfolio](https://eugeneboondock.github.io/alx_capstone_project)
+- [Email](philosncube@gmail.com)
