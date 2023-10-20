@@ -188,7 +188,7 @@ main {
 }
 
 #text {
-    font-size: 50px;
+    font-size: 100px;
     padding: 10px;
     display: flex;
     justify-content: center;
