@@ -27,26 +27,34 @@
 
     <main>
         <section id="about">
-            <div class="about-info">
-                <h2>Hi, Eugene here.</h2>
-                <p>A junior web developer, <br> who builds interesting stuff.</p>
+            <div id="about1">
+                <div class="about-info">
+                    <h2>Hi, Eugene here.</h2>
+                    <p>A junior web developer, <br> who builds interesting stuff.</p>
+                </div>
+                <div class="about-content">
+                    <p class="about-details">👓 <strong>Junior Web Developer</strong></p>
+                    <a href="https://earth2.io"><p class="about-details">🌍 <strong>Explorer of the Metaverse [Web3] | Earth2 Player</strong></p></a>
+                    <a href="https://www.fast.ai/"><p class="about-details">🎓 <strong>AI Aficionado | AI Researcher in Training</strong></p></a> 
+                    <a href="https://huggingface.co/EugeneBoondock"><p class="about-details">📚 <strong>Eager Learner | Deep Learning Devotee</strong></p></a>
+                    <a href="https://discord.gg/earth2"><p class="about-details">🤝 <strong>Community Builder | Earth2 Moderator</strong></p></a>
+                    <a href="https://app.earth2.io/#leaderboard"><p class="about-details">🚀 <strong>Number One on the Earth2 Leaderboard in South Africa</strong></p></a>
+                </div>
+                <div>
+                    <p id="sub">Because Creativity!</p>
+                    <video width="240" height="480" id="dance" autoplay loop muted playsinline controls="false">
+                        <source src="../video/dance.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <div class="about-content">
-                <p class="about-details">👓 <strong>Junior Web Developer</strong></p>
-                <a href="https://earth2.io"><p class="about-details">🌍 <strong>Explorer of the Metaverse [Web3] | Earth2 Player</strong></p></a>
-                <a href="https://www.fast.ai/"><p class="about-details">🎓 <strong>AI Aficionado | AI Researcher in Training</strong></p></a> 
-                <a href="https://huggingface.co/EugeneBoondock"><p class="about-details">📚 <strong>Eager Learner | Deep Learning Devotee</strong></p></a>
-                <a href="https://discord.gg/earth2"><p class="about-details">🤝 <strong>Community Builder | Earth2 Moderator</strong></p></a>
-                <a href="https://app.earth2.io/#leaderboard"><p class="about-details">🚀 <strong>Number One on the Earth2 Leaderboard in South Africa</strong></p></a>
-            </div>
-            <div>
-                <p id="sub">Because Creativity!</p>
-                <video width="240" height="480" id="dance" autoplay loop muted playsinline controls="false">
-                    <source src="../video/dance.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+            <div id="socials">
+                <a href="https://github.com/EugeneBoondock"><img src="../icons/github-mark-white.png" width="40px" alt=""></a>
+                <a href="https://www.linkedin.com/in/eboondock/"><img src="../icons/linkedin.png" width="40px" alt=""></a>
+                <a href="https://x.com/MansaKirito"><img src="../icons/logo-white.png" width="40px" alt=""></a>
             </div>
         </section>
+        
         <section id="skills">
             <h2>Skills</h2>
             <div id="skill">
@@ -73,48 +81,63 @@
                 </ul>
             </div>
             <div id="descriptions">
-                <ul>
-                    <li>Python</li>
-                </ul>
-                <ul>
-                    <li>JavaScript</li>
-                </ul>
-                <ul>
-                    <li>SQL</li>
-                </ul>
-                <ul>
-                    <li>HTML</li>
-                </ul>
-                <ul>
-                    <li>HTMX</li>
-                </ul>
-                <ul>
-                    <li>CSS</li>
-                </ul>
-                <ul>
-                    <li>Version Control - Git</li>
-                </ul>
-                <ul>
-                    <li>Bun library</li>
-                </ul>
-                <ul>
-                    <li>Google Collab</li>
-                </ul>
-                <ul>
-                    <li>HuggingFace</li>
-                </ul>
-                <ul>
-                    <li>Cursor</li>
-                </ul>
+                <div id="backend">
+                    <h4>Backend Development</h4>
+                    <ul>
+                        <li>Python</li>
+                        <p>Experience: Intermediate </p>
+                    </ul>
+                    <ul>
+                        <li>JavaScript</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                    <ul>
+                        <li>SQL</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                </div>
+                <div id="frontend">
+                    <h4>FrontEnd Development</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <p>Experience: Intermediate</p>
+                    </ul>
+                    <ul>
+                        <li>HTMX</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                    <ul>
+                        <li>CSS</li>
+                        <p>Experience: Intermediate</p>
+                    </ul>
+                    <ul>
+                        <li>Bun library</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                    <ul>
+                        <li>Version Control - Git</li>
+                        <p>Experience: Intermediate</p>
+                    </ul>
+                </div>
+                <div id="airesearch">
+                    <h4>AI Research</h4>
+                    <ul>
+                        <li>Google Collab</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                    <ul>
+                        <li>HuggingFace</li>
+                        <p>Experience: Basic</p>
+                    </ul>
+                    <ul>
+                        <li>Cursor</li>
+                        <p>Experience: Intermediate</p>
+                    </ul>
+                </div>
+
             </div>
             <div id="pin">
                 <div id="text"></div>
-                <div>
-                    <video width="240" height="480" id="dance1" autoplay loop muted playsinline controls="false">
-                        <source src="../video/dance.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
             </div>
         </section>
 

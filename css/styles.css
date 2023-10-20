@@ -46,17 +46,45 @@ main {
 
 /* About Me section */
 #about {
-    background-color: #3d3d3d; /* Dark gray background for section */
+    background-color: #3d3d3d;
     padding: 20px;
-    margin-top: 0;
-    color: #fff; /* Light text color */
+    color: #fff;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    position: relative;
     background-image: url(../images/image1.jpeg);
     background-size: cover; /* Adjust the background size to cover the entire section */
     background-position: center; /* Center the background image */
     height: 100vh;
+}
+
+#about1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 450px;
+}
+
+#about1 .about-info,
+#about1 .about-content,
+#about1 div {
+    margin-bottom: 5px;
+}
+
+#socials {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#socials a {
+    margin: 0 10px;
 }
 
 #about #sub {
@@ -81,8 +109,6 @@ main {
 }
 .about-content {
     text-align: center;
-    border: solid #ff8c00 1px;
-    border-radius: 10px;
     padding: 10px;
 }
 
@@ -187,8 +213,29 @@ main {
     padding: 10px;
 }
 
+#backend {
+    border: solid #ff8c00 1px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#frontend {
+    border: solid #ff8c00 1px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#airesearch {
+    border: solid #ff8c00 1px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 #text {
-    font-size: 100px;
+    font-size: 50px;
     padding: 10px;
     display: flex;
     justify-content: center;
