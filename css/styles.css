@@ -80,7 +80,10 @@ main {
     bottom: 20px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
+    border: solid #ff8c00 1px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 #socials a {
