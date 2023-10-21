@@ -30,6 +30,10 @@ nav ul {
     list-style: none;
 }
 
+nav ul a:hover {
+    color: #ff4500;
+}
+
 nav ul li {
     display: inline;
     margin-right: 20px;
@@ -41,11 +45,13 @@ nav a {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
+    margin-top: -15px;
 }
 
 /* About Me section */
 #about {
+    border-radius: 20px;
     background-color: #3d3d3d;
     padding: 20px;
     color: #fff;
@@ -151,7 +157,7 @@ main {
 
 /* Skills section */
 #skills {
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
@@ -255,6 +261,7 @@ main {
 
 /* Projects section */
 #projects {
+    border-radius: 20px;
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     background-image: url(../images/projects_bg.jpeg);
@@ -297,6 +304,7 @@ main {
 
 /* Contact section */
 #contact {
+    border-radius: 20px;
     background-color: #222; /* Dark gray background for section */
     padding: 20px;
     margin-top: 20px;
