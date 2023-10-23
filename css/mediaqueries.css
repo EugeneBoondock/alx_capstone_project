@@ -1,0 +1,140 @@
+/* Media Queries for devices with a width of 768 pixels or less */
+@media all and (max-width: 768px) {
+    /* Adjustments for the header section */
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: -10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    /* Adjustments for the About Me section */
+    #about {
+        background-position: top;
+        height: auto;
+    }
+
+    #about1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        height: 100vh; /* Adjust the height to fit the screen */
+        margin-top: 0; /* Remove the top margin */
+        margin-top: 400px;
+    }    
+
+    #about1 div {
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+
+    .about-details {
+        font-size: 15px;
+    }
+
+    #socials {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #about #sub {
+        margin-bottom: 0;
+    }
+
+    #dance {
+        margin: 0 auto;
+    }
+
+    .about-info {
+        margin-bottom: 20px;
+    }
+
+    /* Adjustments for the Skills section */
+    #skills {
+        background-position: top;
+        height: auto;
+    }
+
+    #skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #descriptions {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #descriptions div {
+        margin-top: 10px;
+    }
+
+    #text {
+        margin-top: -300px;
+        font-size: 20px;
+    }
+
+    /* Adjustments for the Projects section */
+    #projects {
+        background-position: top;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+    }
+
+    /* Adjustments for the project cards */
+    .project-card {
+        flex-basis: calc(70% - 10px); /* Adjusted width to fit within the page */
+        margin-left: -30px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        overflow: hidden; /* Ensure content doesn't overflow */
+        background-size: 100% auto; /* Adjust background size to cover the container */
+        background-repeat: no-repeat; /* Prevent background from repeating */
+        background-position: center; /* Ensure the background remains centered */
+    }
+
+    /* Adjustments for the video containers */
+    .project-card .video-container {
+        max-width: 100%; /* Adjusted width to fit within the container */
+        height: auto;
+        overflow: hidden; /* Allowing height to adjust automatically */
+    }
+    /* Adjustments for the Contact section */
+    #contact {
+        background-position: top;
+        height: auto;
+    }
+
+    /* Adjustments for the Form styles */
+    form {
+        align-items: center;
+    }
+    
+    /* Adjustments for the footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+}
+

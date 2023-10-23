@@ -27,7 +27,8 @@ header {
 }
 
 nav ul {
-    list-style: none;
+    display: flex;
+    list-style-type: none;
 }
 
 nav ul a:hover {
@@ -181,6 +182,7 @@ main {
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
+    background-color: #000;
 }
 
 #skill #sec {
@@ -188,6 +190,7 @@ main {
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
+    background-color: #000;
 }
 
 #skill #third {
@@ -195,6 +198,7 @@ main {
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
+    background-color: #000;
 }
 
 #skill #four {
@@ -202,6 +206,7 @@ main {
     width: 150px;
     border-radius: 20px;
     padding-top: 10px;
+    background-color: #000;
 }
 
 #skill #fift {
@@ -210,6 +215,7 @@ main {
     border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #000;
 }
 
 #descriptions {
@@ -364,114 +370,8 @@ footer a {
     color: white;
 }
 
-/* For tablets and smaller devices */
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    #about {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .about-info {
-        margin-top: 300px;
-    }
-
-    #skills {
-        padding: 20px;
-        height: auto;
-    }
-
-    #descriptions {
-        flex-direction: column;
-    }
-
-    #projects {
-        padding: 10px;
-        background-size: cover;
-    }
-
-    .project-card {
-        margin-right: 30px
-    }
-
-    label {
-        margin-top: 5px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        padding: 5px;
-        margin: 3px 0;
-    }
+.hamburger-icon {
+    display: none;
 }
 
-/* For mobile devices */
-@media (max-width: 480px) {
-    header {
-        padding: 5px;
-    }
 
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-
-    main {
-        padding: 5px;
-    }
-
-    .about-content {
-        padding: 5px;
-    }
-
-    #about #sub {
-        margin-bottom: -80px;
-    }
-
-    .about-details {
-        font-size: 1rem;
-    }
-
-    .about-info {
-        margin-bottom: 50px;
-        font-size: 16px;
-    }
-
-    #text {
-        font-size: 60px;
-    }
-
-    #pin {
-        margin-top: 100px;
-    }
-
-    #skills {
-        padding: 10px;
-    }
-
-    #skill {
-        flex-direction: column;
-    }
-
-    #descriptions {
-        padding: 5px;
-    }
-
-    button[type="submit"] {
-        margin-top: 10px;
-        padding: 5px 10px;
-    }
-}

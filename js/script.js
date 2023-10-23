@@ -3,8 +3,7 @@
 // An array of text strings
 const texts = [
     "I speak Python fluently, but my snake charming skills need work.",
-    "JavaScript is my cup of tea, it keeps me grounded even when my DOM's in disarray.",
-    "That's enough text for today, you get the point."
+    "JavaScript is my cup of tea, it keeps me grounded even when my DOM's in disarray."
 ];
 // Initialize variables
 let currentTextIndex = 0;
