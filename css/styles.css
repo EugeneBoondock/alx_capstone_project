@@ -348,7 +348,21 @@ button[type="submit"]:hover {
     background-color: #ff4500; /* Slightly darker orange on hover */
 }
 
-/* Add this at the end of your CSS file */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ff8c00;
+}
+
+footer p{
+    padding: 5px;
+}
+
+footer a {
+    font-style: none;
+    color: white;
+}
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
