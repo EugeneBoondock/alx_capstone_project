@@ -1,35 +1,42 @@
 #!/usr/bin/node
 
+// An array of text strings
 const texts = [
     "I speak Python fluently, but my snake charming skills need work.",
-    "JavaScript is my cup of tea, it keeps me grounded even when my DOM's in disarray.", 
-    "That's enough text for today, you get the point."];
+    "JavaScript is my cup of tea, it keeps me grounded even when my DOM's in disarray.",
+    "That's enough text for today, you get the point."
+];
+// Initialize variables
 let currentTextIndex = 0;
 let currentText = texts[currentTextIndex];
 let index = 0;
 const speed = 50; // Adjust the speed of typing
 const pauseDuration = 3000; // 3 seconds
 
+// Function for typing text
 function typeWriter() {
-  if (index < currentText.length) {
-    document.getElementById("text").innerHTML += currentText.charAt(index);
-    index++;
-    setTimeout(typeWriter, speed);
-  } else {
-    setTimeout(resetText, pauseDuration);
-  }
+    if (index < currentText.length) {
+        document.getElementById("text").innerHTML += currentText.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+    } else {
+        setTimeout(resetText, pauseDuration);
+    }
 }
 
+// Function to reset the text and continue typing
 function resetText() {
-  index = 0;
-  currentTextIndex = (currentTextIndex + 1) % texts.length;
-  currentText = texts[currentTextIndex];
-  document.getElementById("text").innerHTML = "";
-  setTimeout(typeWriter, speed);
+    index = 0;
+    currentTextIndex = (currentTextIndex + 1) % texts.length;
+    currentText = texts[currentTextIndex];
+    document.getElementById("text").innerHTML = "";
+    setTimeout(typeWriter, speed);
 }
 
+// Start the typing animation
 typeWriter();
 
+// Function to validate the name field
 function validateName() {
     const name = document.getElementById('name').value;
     const error = document.getElementById('errorName');
@@ -43,6 +50,7 @@ function validateName() {
     return true;
 }
 
+// Function to validate the email field
 function validateEmail() {
     const email = document.getElementById('email').value;
     const error = document.getElementById('errorEmail');
@@ -51,7 +59,7 @@ function validateEmail() {
         error.innerHTML = 'Please enter an email address';
         return false;
     }
-    
+
     // Regular expression for email validation
     const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     if (!email.match(emailPattern)) {
@@ -63,6 +71,7 @@ function validateEmail() {
     return true;
 }
 
+// Function to validate the message field
 function validateMessage() {
     const message = document.getElementById('message').value;
     const error = document.getElementById('errorMessage');
@@ -76,6 +85,7 @@ function validateMessage() {
     return true;
 }
 
+// Function to handle the form submission
 function handleFormSubmit(event) {
     event.preventDefault();
 
@@ -92,5 +102,6 @@ function handleFormSubmit(event) {
     }
 }
 
+// Add event listener to the form submission
 const submitForm = document.getElementById('submitForm');
 submitForm.addEventListener('submit', handleFormSubmit);
