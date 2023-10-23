@@ -42,9 +42,9 @@
         font-size: 15px;
     }
 
-    #socials {
-        position: static;
-        margin-top: 20px;
+    .dox {
+        text-align: center;
+        font-size: 12px;
     }
 
     .bot {
