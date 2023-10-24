@@ -9,7 +9,7 @@ const texts = [
 let currentTextIndex = 0;
 let currentText = texts[currentTextIndex];
 let index = 0;
-const speed = 50; // Adjust the speed of typing
+const speed = 50; //speed of typing
 const pauseDuration = 3000; // 3 seconds
 
 // Function for typing text
@@ -32,7 +32,7 @@ function resetText() {
     setTimeout(typeWriter, speed);
 }
 
-// Start the typing animation
+// Typing animation
 typeWriter();
 
 // Function to validate the name field
