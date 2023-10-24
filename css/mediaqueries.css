@@ -2,144 +2,143 @@
 @media all and (max-width: 768px) {
     /* Adjustments for the header section */
     header {
-        padding: 10px;
+        padding: 10px; /* Adding padding to the header for better spacing */
     }
 
+    /* Adjustments for the navigation */
     nav ul {
-        flex-direction: row;
-        text-align: center;
-        justify-content: space-around;
-        margin-left: -10px;
+        flex-direction: row; /* Changing direction to row for better alignment */
+        text-align: center; /* Centering the text within the navigation */
+        justify-content: space-around; /* Adding space around navigation items */
+        margin-left: -10px; /* Adjusting margin to ensure proper alignment */
     }
 
     nav ul li {
-        display: block;
+        display: block; /* Displaying list items as block for better visibility */
     }
 
     /* Adjustments for the About Me section */
     #about {
-        background-position: top;
-        height: auto;
+        background-position: top; /* Aligning the background position to the top */
+        height: auto; /* Setting the height to auto for responsive design */
     }
 
     #about1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-        width: 100%;
-        height: 100vh; /* Adjust the height to fit the screen */
-        margin-top: 0; /* Remove the top margin */
-        margin-top: 400px;
-    }    
+        display: flex; /* Displaying as flex for better layout */
+        flex-direction: column; /* Aligning elements in a column */
+        justify-content: center; /* Centering content vertically */
+        align-items: center; /* Centering content horizontally */
+        width: 100%; /* Adjusting width to fill the screen */
+        height: 100vh; /* Adjusting height to fit the screen */
+        margin-top: 0; /* Removing top margin */
+        margin-top: 400px; /* Adjusting top margin for better spacing */
+    }
 
     #about1 div {
-        margin-bottom: 20px;
-        padding: 30px;
+        margin-bottom: 20px; /* Adding margin for better spacing */
+        padding: 30px; /* Adding padding for better spacing */
     }
 
     .about-details {
-        font-size: 15px;
+        font-size: 15px; /* Adjusting font size for better readability */
     }
 
     .dox {
-        text-align: center;
-        font-size: 12px;
+        text-align: center; /* Centering the text */
+        font-size: 12px; /* Adjusting font size for better readability */
     }
 
     .bot {
-        margin-top: 150px;
+        margin-top: 150px; /* Adjusting margin for better layout */
     }
 
     #about #sub {
-        margin-bottom: 0;
+        margin-bottom: 0; /* Removing bottom margin */
     }
 
     #dance {
-        margin: 0 auto;
-        margin-bottom: -100px;
+        margin: 0 auto; /* Centering the video horizontally */
+        margin-bottom: -100px; /* Adjusting margin for better positioning */
     }
 
     .about-info {
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Adding margin for better spacing */
     }
 
     /* Adjustments for the Skills section */
     #skills {
-        background-position: top;
-        height: auto;
+        background-position: top; /* Aligning the background position to the top */
+        height: auto; /* Setting the height to auto for responsive design */
     }
 
     #skill {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Aligning elements in a column for better layout */
+        align-items: center; /* Centering items horizontally */
     }
 
     #descriptions {
-        flex-direction: column;
-        margin-top: 20px;
+        flex-direction: column; /* Aligning elements in a column for better layout */
+        margin-top: 20px; /* Adjusting top margin for better spacing */
     }
 
     #descriptions div {
-        margin-top: 10px;
+        margin-top: 10px; /* Adding margin for better spacing */
     }
 
     #text {
-        margin-top: -300px;
-        font-size: 20px;
+        margin-top: -300px; /* Adjusting top margin for better positioning */
+        font-size: 20px; /* Adjusting font size for better readability */
     }
 
     /* Adjustments for the Projects section */
     #projects {
-        background-position: top;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 20px;
+        background-position: top; /* Aligning the background position to the top */
+        display: flex; /* Displaying as flex for better layout */
+        flex-wrap: wrap; /* Wrapping items for better responsiveness */
+        justify-content: space-between; /* Adding space between items */
+        padding: 20px; /* Adding padding for better spacing */
+        background-size: cover; /* Adjusting background size for better appearance */
+        background-repeat: no-repeat; /* Preventing background from repeating */
+        margin-top: 20px; /* Adjusting top margin for better spacing */
     }
 
     /* Adjustments for the project cards */
     .project-card {
-        flex-basis: calc(70% - 10px); /* Adjusted width to fit within the page */
-        margin-left: -30px;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        padding: 20px;
-        border-radius: 5px;
-        overflow: hidden; /* Ensure content doesn't overflow */
-        background-size: 100% auto; /* Adjust background size to cover the container */
-        background-repeat: no-repeat; /* Prevent background from repeating */
-        background-position: center; /* Ensure the background remains centered */
+        flex-basis: calc(100% - 10px); /* Adjusting width to fit within the page */
+        margin-left: -20px; /* Adjusting margin for better spacing */
+        margin-bottom: 20px; /* Adding margin for better spacing */
+        border: 1px solid #ddd; /* Adding border for better visibility */
+        padding: 20px; /* Adding padding for better spacing */
+        border-radius: 5px; /* Adding border radius for better appearance */
+        overflow: hidden; /* Preventing content overflow for better layout */
+        background-size: 100% auto; /* Adjusting background size for better appearance */
+        background-repeat: no-repeat; /* Preventing background from repeating */
+        background-position: center; /* Centering the background */
     }
 
-    /* Adjustments for the video containers */
-    .project-card .video-container {
-        max-width: 100%; /* Adjusted width to fit within the container */
-        height: auto;
-        overflow: hidden; /* Allowing height to adjust automatically */
+    #projects video {
+        width: 300px;
+        height: 300px;
     }
+
     /* Adjustments for the Contact section */
     #contact {
-        background-position: top;
-        height: auto;
+        background-position: top; /* Aligning the background position to the top */
+        height: auto; /* Setting the height to auto for responsive design */
     }
 
     /* Adjustments for the Form styles */
     form {
-        align-items: center;
+        align-items: center; /* Centering form items horizontally */
     }
-    
+
     /* Adjustments for the footer */
     footer {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Aligning elements in a column for better layout */
+        align-items: center; /* Centering items horizontally */
     }
 
     main {
-        overflow-x: hidden;
+        overflow-x: hidden; /* Hiding horizontal overflow for better appearance */
     }
 }
-
